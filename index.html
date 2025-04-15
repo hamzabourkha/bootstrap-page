@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bnbconsulting.ma – Créateur de solutions digitales & locatives</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfb;
+            color: #333;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .btn-custom {
+            background-color: #b8a072;
+            border: none;
+            color: white;
+            font-weight: 500;
+            padding: 10px 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #a18b5d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #f3ede3;
+            color: #444;
+            padding: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #b08a5c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #8d6b3e;
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 5%;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .hero p.lead {
+            font-size: 1.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                justify-content: center;
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p.lead {
+                font-size: 1rem;
+            }
+        }
+
+        .navbar {
+            background: transparent;
+            transition: background-color 0.3s;
+        }
+
+        .navbar.scrolled {
+            background-color: white !important;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 20px;
+            max-height: 7vh;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: #333;
+        }
+
+        .nav-link:hover {
+            color: #b8a072;
+        }
+
+        .expertise-icon {
+            font-size: 2rem;
+            color: #b8a072;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo Bnbconsulting">
+                Bnbconsulting
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="display-5 fw-bold">Bnbconsulting – Créateur de solutions digitales & locatives</h1>
+            <p class="lead">Des solutions sur-mesure pour chaque propriétaire ou entreprise</p>
+            <a href="#contact" class="btn btn-custom btn-lg mt-3">Discutons de votre projet</a>
+        </div>
+    </section>
+
+    <!-- Nos domaines d’expertise -->
+    <section class="container py-5">
+        <h2 class="section-title">Nos domaines d’expertise</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="expertise-icon">💡</div>
+                <h5>Digitalisation de services</h5>
+                <p>Des plateformes web et outils conçus pour automatiser vos tâches métier.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="expertise-icon">🏠</div>
+                <h5>Gestion locative intelligente</h5>
+                <p>Suivi en temps réel, gestion des réservations et automatisation des tâches.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="expertise-icon">📊</div>
+                <h5>Tableaux de bord personnalisés</h5>
+                <p>Visualisation des performances avec des indicateurs clairs et dynamiques.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="expertise-icon">🧩</div>
+                <h5>Solutions modulaires</h5>
+                <p>Développement de modules adaptés à vos besoins spécifiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="container py-5" style="background: #fcf8f3;">
+        <p class="text-center mb-4">Découvrez les différentes solutions que nous avons développées pour simplifier la
+            gestion locative et l’expérience propriétaire.</p>
+        <h2 class="section-title">Nos Solutions</h2>
+        <p class="text-center text-muted mb-4">Des produits pensés pour simplifier, optimiser et automatiser vos
+            opérations locatives et digitales.</p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046792.png" width="50" class="mb-3"
+                        alt="Gestion locative">
+                    <h5 class="fw-semibold">BnbMorocco</h5>
+                    <p>Plateforme de gestion locative courte durée dédiée aux propriétaires marocains. Gestion
+                        automatisée, communication client, planning intelligent.</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828925.png" width="50" class="mb-3"
+                        alt="Digitalisation">
+                    <h5 class="fw-semibold">SmartLoc</h5>
+                    <p>Solution de digitalisation de l’expérience propriétaire : alertes, paiements, documents
+                        centralisés, tableaux de bord personnalisés.</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1490/1490872.png" width="50" class="mb-3"
+                        alt="Conciergerie">
+                    <h5 class="fw-semibold">Conciergerie360</h5>
+                    <p>Un service clé en main pour vos biens en location courte durée : ménage, maintenance,
+                        check-in/out, reporting.</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3349/3349789.png" width="50" class="mb-3"
+                        alt="Prestataires réseau">
+                    <h5 class="fw-semibold">SousLoc Pro</h5>
+                    <p>Plateforme collaborative permettant aux gestionnaires locatifs et sous-loueurs de trouver des
+                        prestataires qualifiés (ménage, électricien, check-in/out, plombier, climatisation...)</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1049/1049873.png" width="50" class="mb-3"
+                        alt="Urgence dépannage">
+                    <h5 class="fw-semibold">BnbSOS</h5>
+                    <p>Un service de dépannage d'urgence incluant : réparation, gestion de conflits, connexion wifi,
+                        transferts aéroport, interventions 24h/7j.</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100 bg-white text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2357/2357760.png" width="50" class="mb-3"
+                        alt="Accompagnement & Conseil">
+                    <h5 class="fw-semibold">BnbExpertise</h5>
+                    <p>Service d'accompagnement stratégique pour les nouveaux investisseurs locatifs : conseils fiscaux,
+                        étude de rentabilité, choix du bon modèle de gestion.</p>
+                    <a href="#" class="btn btn-outline-theme btn-sm mt-2">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container py-5">
+        <p class="text-center mb-4">En plus de nos solutions technologiques, nous proposons une gamme de services
+            professionnels adaptés à vos besoins.</p>
+        <h2 class="section-title">Nos Services</h2>
+        <p class="text-center text-muted mb-4">Une offre de services professionnels pour accompagner votre
+            développement, de la visibilité à l'efficacité opérationnelle.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3304/3304569.png" width="40" class="mb-3"
+                        alt="Site vitrine">
+                    <h5 class="fw-semibold">Création de site vitrine</h5>
+                    <p>Sites web modernes pour mettre en valeur vos biens ou votre marque personnelle.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920261.png" width="40" class="mb-3"
+                        alt="Photo pro">
+                    <h5 class="fw-semibold">Photographie professionnelle</h5>
+                    <p>Des visuels attractifs qui boostent la visibilité de vos annonces en ligne.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7541/7541900.png" width="40" class="mb-3"
+                        alt="Planning">
+                    <h5 class="fw-semibold">Centralisation de planning</h5>
+                    <p>Synchronisation de vos réservations sur toutes les plateformes (Airbnb, Booking, etc.).</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="40" class="mb-3"
+                        alt="Rédaction">
+                    <h5 class="fw-semibold">Rédaction d’annonce optimisée</h5>
+                    <p>Création de textes persuasifs et bien référencés pour vos publications.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4021/4021701.png" width="40" class="mb-3"
+                        alt="Support client">
+                    <h5 class="fw-semibold">Support client multilingue</h5>
+                    <p>Réponses rapides et efficaces à vos voyageurs en plusieurs langues, 7j/7.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border rounded shadow-sm bg-white text-center h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2541/2541991.png" width="40" class="mb-3"
+                        alt="Coaching">
+                    <h5 class="fw-semibold">Formations & Coaching</h5>
+                    <p>Modules d’apprentissage pour développer vos compétences en gestion locative.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Nos Engagements -->
+<section class="container py-5">
+    <h2 class="section-title">Nos engagements</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="p-4 border rounded bg-white shadow-sm">
+          <img src="https://cdn-icons-png.flaticon.com/512/1792/1792931.png" width="40" class="mb-3" alt="Support">
+          <h6 class="fw-semibold">Support 7j/7</h6>
+          <p class="mb-0">Assistance continue pour tous nos clients.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 border rounded bg-white shadow-sm">
+          <img src="https://cdn-icons-png.flaticon.com/512/929/929426.png" width="40" class="mb-3" alt="Transparence">
+          <h6 class="fw-semibold">Transparence</h6>
+          <p class="mb-0">Suivi en temps réel et rapports réguliers.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 border rounded bg-white shadow-sm">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828677.png" width="40" class="mb-3" alt="Fiabilité">
+          <h6 class="fw-semibold">Paiements mensuels</h6>
+          <p class="mb-0">Versements assurés à date fixe.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 border rounded bg-white shadow-sm">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="40" class="mb-3" alt="Proximité">
+          <h6 class="fw-semibold">Réactivité</h6>
+          <p class="mb-0">Interventions urgentes sous 24h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Success Stories -->
+  <section class="container py-5" style="background-color: #fff9f2;">
+    <h2 class="section-title">Success Stories</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 border rounded bg-white shadow-sm h-100">
+          <h5 class="fw-semibold">📍 Marrakech, médina</h5>
+          <p class="text-muted small">Avant : logement vide 8 mois/an.<br>Après : +65% d’occupation en 2 mois grâce à notre solution SmartLoc.</p>
+          <blockquote class="fst-italic small">“Notre riad est devenu rentable et nous recevons des alertes en temps réel.”</blockquote>
+          <p class="fw-semibold mb-0 text-end">— Rachid K.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 border rounded bg-white shadow-sm h-100">
+          <h5 class="fw-semibold">📍 Casablanca, quartier Maarif</h5>
+          <p class="text-muted small">Avant : annonces peu visibles.<br>Après : +3x de vues sur Airbnb, grâce à nos shootings et rédaction optimisée.</p>
+          <blockquote class="fst-italic small">“Je n’avais jamais eu autant de réservations en basse saison.”</blockquote>
+          <p class="fw-semibold mb-0 text-end">— Salma E.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog / Conseils -->
+  <section class="container py-5">
+    <h2 class="section-title">Conseils & Ressources</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 border rounded bg-white shadow-sm h-100">
+          <h6 class="fw-semibold">🔍 5 erreurs à éviter en location courte durée</h6>
+          <p class="small">Découvrez les pièges courants et comment maximiser vos revenus sereinement.</p>
+          <a href="#" class="btn btn-outline-theme btn-sm">Lire l’article</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded bg-white shadow-sm h-100">
+          <h6 class="fw-semibold">📈 Rentabilité : calculez votre seuil de rentabilité</h6>
+          <p class="small">Un guide simple pour comprendre et estimer vos marges mensuelles.</p>
+          <a href="#" class="btn btn-outline-theme btn-sm">Lire l’article</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded bg-white shadow-sm h-100">
+          <h6 class="fw-semibold">📦 Comment gérer plusieurs biens efficacement ?</h6>
+          <p class="small">Les outils indispensables pour automatiser la gestion multi-biens.</p>
+          <a href="#" class="btn btn-outline-theme btn-sm">Lire l’article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Final -->
+  <section class="py-5 text-white" style="background: linear-gradient(120deg, #b8a072, #e0cda3);">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">Vous souhaitez transformer votre projet en réalité ?</h2>
+      <p class="lead mb-4">Notre équipe vous accompagne de l'idée à l’exécution, sans stress.</p>
+      <a href="contact.html" class="btn btn-light btn-lg px-4 py-2 fw-semibold shadow-sm">
+        Discuter avec un expert
+        <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" width="18" class="ms-2">
+      </a>
+    </div>
+  </section>
+
+    <section id="apropos" class="container py-5">
+        <h2 class="section-title">À propos de Bnbconsulting</h2>
+        <p class="text-center">Bnbconsulting est un créateur de solutions innovantes mêlant technologie, service et
+            humain.</p>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 class="section-title">Contact</h2>
+        <p class="text-center">Une idée ? Un projet ? Parlons-en.</p>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Bnbconsulting.ma – Tous droits réservés</p>
+            <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>
